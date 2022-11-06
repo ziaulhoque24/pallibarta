@@ -1,0 +1,33 @@
+{
+  "name": "creative",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "init": "^0.1.2",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-multi-carousel": "^2.8.2",
+    "react-redux": "^8.0.4",
+    "redux": "^4.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "babel-plugin-styled-components": "^2.0.7",
+    "bootstrap": "^5.2.0",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "install": "^0.13.0",
+    "npm": "^8.19.1",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
+  }
+}

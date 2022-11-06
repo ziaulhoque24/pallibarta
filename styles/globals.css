@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+  --custom-font: Pallibarta Font;
+  --surjo: Surjo;
+
+
+  --des-color: #555;
+}
+@font-face {
+  font-family: 'Surjo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Surjo'), url('./surjo.woff') format('woff');
+
+}
+@font-face {
+  font-family: 'Pallibarta Font';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pallibarta Font'), url('./pallibartafont.woff') format('woff');
+
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Surjo, Pallibarta Font, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif!important;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* bangladesh map */
+
+.center {
+  text-align: center;
+}
+.st1 {
+  fill: #787878;
+}
+
+.st2 {
+  fill: none;
+}
+.st3 {
+  fill: #367445;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: #787878;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+.st5 {
+  fill: #787878;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+.st6 {
+  fill: #787878;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+.st7 {
+  fill: #787878;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+.st8 {
+  fill: #787878;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+.st9 {
+  fill: #787878;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+
+.st10 {
+  fill: #787878;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+
+.st11 {
+  fill: #367445;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+
+.st13 {
+  fill: #367445;
+  stroke: #fff;
+  stroke-width: .25;
+  stroke-miterlimit: 10;
+}
+
+.st14 {
+  fill: #367445;
+  stroke: #fff;
+  stroke-width: .75;
+  stroke-miterlimit: 10;
+}
+.st15 {
+  fill: #858585;
+  stroke: #fff;
+  stroke-width: .25;
+  stroke-miterlimit: 10;
+}
+.st17 {
+  fill: #fff;
+}
+.st18 {
+  opacity: .34;
+}
+
+.st19 {
+  fill: #d5d5d5;
+}
+
+.MapBd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 530px;
+  width: 100%;
+}
+
+.MapBd a:hover .st3, .MapBd a:hover
+.st14,
+.MapBd a:hover
+.st11,
+.MapBd a:hover
+.st13 {
+fill: #9A1515;
+}
