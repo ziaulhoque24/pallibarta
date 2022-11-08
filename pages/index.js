@@ -1,12 +1,23 @@
 import HomePage from "../components/HomePage/HomePage";
+import { useSelector, useDispatch } from 'react-redux'
+import { setDevice } from '../redux/slice/userSlice'
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 
 
-function Home({  }) {
+function Home({ deviceType }) {
+
+  const device = useSelector((state) => state.device.device)
+  const dispatch = useDispatch();
+  dispatch(setDevice(deviceType))
  
   return (
-   
-    <HomePage/>
+   <>
+      <Header deviceType={deviceType} />
+      <HomePage deviceType={deviceType} />
+      <Footer />
+   </>
    
   )
 }

@@ -1,5 +1,10 @@
-import { createStore } from "redux";
-import { reducer } from "../reducers/Reducer";
+import { configureStore } from '@reduxjs/toolkit'
+import userReducer from "../slice/userSlice";
 
+export const store = configureStore({
+    reducer: {
 
-export const store = createStore(reducer);
+        device: userReducer,
+
+    },
+})
