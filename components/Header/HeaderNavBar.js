@@ -15,14 +15,14 @@ const HeaderNavBar = ({ deviceType}) => {
     console.log()
 
     return (
-        <div className='border-b sticky top-0 bg-white z-[10]'>
+        <div className='border-b sticky top-0 bg-white z-[9]'>
             <div className='container'>
                 {(deviceType == "desktop") &&
                 <>
-                        <div className='flex justify-center items-center text-[1.2rem] font-bold gap-1'>
+                        <div className='flex justify-center items-center lg:text-[1.2rem] font-bold gap-1'>
                             <span className='p-2 relative group'>সর্বশেষ</span>
                             <span className='p-2 relative group'>জাতীয়
-                                <div className='w-[200px] h-auto z-[10] flex-col hidden absolute top-[42px] group-hover:flex shadow'>
+                                <div className='w-[200px] h-auto z-[9] flex-col hidden absolute top-[42px] group-hover:flex shadow'>
                                     <HeaderSubMenuItem />
                                     <HeaderSubMenuItem />
                                     <HeaderSubMenuItem />

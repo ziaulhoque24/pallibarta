@@ -39,14 +39,7 @@ export const HomeLeadYourAreaHeading = styled.div`
 
 export const HomeLeadYourAreaItem = styled.div`
 
-display: flex;
-padding: 10px 0;
-align-items: center;
-padding: 5px;
-border-bottom: 1px solid lightgray;
-text-align: justify;
-font-size: 1.1rem;
-font-family: var(--surjo);
+
 
 
 `

@@ -1,11 +1,12 @@
-import { SectionHeadingContainer } from "./Styled.SectionHeading";
 
 function SectionHeading({ headingText }) {
     return (
         <>
-            <SectionHeadingContainer>
+            <div className="flex justify-start items-center 
+            py-2 px-2 font-bold text-red-700
+            text-[1.4rem]">
                 {headingText}
-            </SectionHeadingContainer>
+            </div>
         </>
     );
 }

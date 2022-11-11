@@ -1,10 +1,9 @@
 import React from 'react';
-import { FirstAdsContainer } from '../AdsSection.Styled';
 
 const FirstAds = () => {
     return (
         <>
-            <FirstAdsContainer/>
+            <div className='w-full h-12 border-b'></div>
         </>
     );
 };

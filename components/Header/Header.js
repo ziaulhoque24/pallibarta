@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HiMenuAlt1 } from 'react-icons/hi';
+import { HiMenuAlt1, HiSearch } from 'react-icons/hi';
 import HeaderSearchIcon from "./HeaderSearchIcon"
 import { FaFacebookSquare, FaTwitterSquare, FaYoutubeSquare, FaLinkedin } from 'react-icons/fa';
 import logo from "../../public/assets/images/Pallibarta_logo_1.png"
@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 
 const Header = ({ deviceType }) => {
-    console.log(deviceType)
+    const [iconState, setIconState] = useState(false);
 
     const [date, setDate] = useState();
     useEffect(() => {
@@ -19,12 +19,14 @@ const Header = ({ deviceType }) => {
     return (
         <>
             <div className='border-b'>
-                <div className='container'>
-                    <div className='flex justify-between py-3'>
-                        <div className='flex justify-start items-center lg:items-start w-2/6'>
-
-                            <span className='text-3xl lg:text-[2.3em] flex justify-center items-center'><HiMenuAlt1 /></span>
-                            <span className='px-2 text-3xl lg:text-[2.3em] flex justify-center items-center'><HeaderSearchIcon /></span>
+                <div className='container z-[11]'>
+                    <div className='flex justify-between py-[20px]'>
+                        <div className='relative flex justify-start items-center lg:items-start w-2/6'>
+                            <span className='text-2xl lg:text-[2.3em] flex justify-center items-center'><HiMenuAlt1 /></span>
+                            <span className='px-2 text-2xl lg:text-[2.3em] flex justify-center items-center'>
+                                <HiSearch onClick={() => setIconState(!iconState) } />
+                                </span>
+                            <HeaderSearchIcon setIconState={setIconState} iconState={iconState} />
 
                         </div>
                         <div className='flex lg:py-2  justify-center items-center w-2/6'>
@@ -51,8 +53,9 @@ const Header = ({ deviceType }) => {
                     </div>
                 </div>
             </div>
+            
             <HeaderNavBar deviceType={deviceType} />
-
+            
         </>
     );
 };

@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 
-
+@layer components {
+  .yourAreaItem {
+    @apply flex
+      py-2
+      items-center
+      border-b
+      text-[1.1rem]
+  
+  }
+}
 
 :root {
   --custom-font: Pallibarta Font;
